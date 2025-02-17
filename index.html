@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Denzel Chike | Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/fdc3c4e612.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/techsavy.jpg" alt="logo">
+        <ul id="sideMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Aspiring Data Analyst & Data Engineer</p>
+        <h1>Hi, I'm <span>Denzel Chike</span><br>From Allen, TX</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/DenzelPicture.jpg" alt="Denzel Chike">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a senior at the University of North Texas, set to graduate with a B.S. in Data Science. I have a strong foundation in SQL, Python, R, and data visualization tools like Tableau and Power BI. My experience includes working on data analysis and engineering projects, where I have applied my skills to develop data-driven solutions.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Data Analysis</span><br>SQL, R, Python, Excel, Pandas, Google Colab</li>
+              <li><span>Data Visualization</span><br>Tableau, Power BI, Matplotlib</li>
+              <li><span>Cloud Platforms</span><br>Azure</li>
+              <li><span>Developer Tools</span><br>Git, Linux, Jupyter Notebook</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Pharmacy Technician Trainee</span><br>CVS - On-Site | Aug 2023 - Present</li>
+              <li><span>Sales Associate</span><br>CVS - On-Site | Jan 2020 - July 2023</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>May 2025</span><br>Bachelor of Science in Data Science, University of North Texas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- ---------services ----------- -->
+<div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Data Analysis</h2>
+          <p>I analyzed data to provide actionable insights for businesses. I use tools like Python, Excel, and Tableau to clean, analyze, and visualize data, helping to drive data-driven decisions and uncover patterns for improvement in insurance fraud.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Data Engineering</h2>
+          <p>I specialize in designing and developing data solutions, with expertise in Azure and SQL. I build efficient databases by creating **ERDs** and writing SQL queries for database creation, table management, and data insertion. I focus on ensuring data is well-organized and optimized for performance and scalability in cloud environments.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Machine Learning</h2>
+          <p>I applied machine learning techniques by building predictive models for analyzing trends. Using R and libraries to develope algorithms for forecasting and optimization, utilizing data preprocessing, feature engineering, and model evaluation to extract insights for trends and patterns.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------portfolio--------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/insurance-fraud.jpg" alt=""> 
+          <div class="layer">
+            <h3>Data Analysis Python and Tableau Project</h3>
+            <p>This project analyzes an auto insurance claims dataset to uncover insights about potential fraudulent claims and how claim amounts vary across different customer segments. Using Python with an Isolation Forest model, the project flags around 92 claims as potentially fraudulent, while Tableau dashboards provide interactive visualizations that segment claim amounts by demographics such as gender, marital status, and education. The integration of machine learning and visual analytics helps improve risk management and tailor insurance strategies.</p>
+            <a href="https://github.com/DenzelChikeProjects/Claims-Fraud-Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Azure.png" alt="">
+          <div class="layer">
+            <h3>Pet Store Database Development</h3>
+            <p>As part of a team, I contributed to the design and implementation of a MySQL database system for a pet store chain, optimizing the management of inventory, sales, employees, and customer data. I played a key role in developing the Entity-Relationship Diagram (ERD) and defining business rules to maintain data accuracy and consistency. Additionally, I created SQL scripts for database setup, data population, and advanced queries to analyze sales trends, employee productivity, and customer behaviors using Azure Data Studio. Throughout the project, I collaborated with team members to gather requirements, tackle technical challenges, and deliver actionable insights.</p>
+            <a href="https://github.com/DenzelChikeProjects/PetStore-Database"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Risk.png" alt="">
+          <div class="layer">
+            <h3>Credit Risk Analysis</h3>
+            <p>This project analyzed credit card default risk using a UCI dataset to identify factors influencing default probability and improve credit risk models.The analysis also revealed that higher credit utilization and poor payment history were strongly linked to increased default rates. These findings can help financial institutions enhance credit scoring and risk management strategies.</p>
+            <a href="https://github.com/DenzelChikeProjects/Credit-Card-Default-Risk-Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ---------contact----------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i> denzelchike@my.unt.edu</p>
+          <p><i class="fa-solid fa-phone"></i> 469-353-1007</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/denzel-chike/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/DenzelChikeProjects"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/myresume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+    
+  <script src="script.js"></script>
+
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIhhACK0RMrHB_ksaoGlYy-6mbqIkLvhmlOgEHd4LHGU5QcjwbR7WMOlG3Bv9tquqD/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = documeent.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+
+</html>  
+
